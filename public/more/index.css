@@ -1,0 +1,2838 @@
+.headslider,
+.indexstruct,
+.mselection {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.actcont .actadd i,
+.actcont .actbtn a,
+.actcont .acttime i,
+.actdot i,
+.categorynav h3 a,
+.categorynav i,
+.categorynav p a,
+.ciname-movie .mainmovie .mainmovieinfo p.combox i,
+.ciname-onnext .showtype .icovideo,
+.cinemamenu dd,
+.cinematip .alist a,
+.countdown em,
+.countdown i,
+.customnav dd,
+.customnav dl,
+.hotcomments .commentsbox .commentsuser p a,
+.hotcomments .commentsbox .commentsuser span,
+.hotcomments .commentsbox .describe i,
+.hotcomments .commentsmod .describe i,
+.hotcomments .commentsmod .describemovie a,
+.i_cityselect .icon_jtup,
+.i_cityselect .icon_position,
+.itemblock2 .tag i,
+.mboxofficetab dd span,
+.movieselect,
+.movieselect .name,
+.movieselect .name .namebox,
+.selcity_tiptit .cityletter a,
+.selguide .mainguide span.moviectrl .btnctrl,
+.selguide .mainguide span.movierank i,
+.tradercommend li h3 a,
+.tradercommend li p a {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    zoom: 1;
+    vertical-align: middle
+}
+
+.headslider dd,
+.imgrolling .imgrollinner dl {
+    transition: .6s all
+}
+
+.actcont .actadd i,
+.actcont h3,
+.ciname-onnext .showbox h3 a,
+.hotcomments .commentsbox .commentsuser p a,
+.hotcomments .commentsbox h3,
+.hotcomments .commentsmod .describemovie a,
+.mboxofficerank h3 a,
+.movieselect .name .namebox,
+.newsitem .describe a,
+.newsitem h3 a,
+.selguide .mainguide span.moviename a,
+.seltrailer .videobox span strong,
+.seltrailer dt h3 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical
+}
+
+.headslider {
+    position: relative;
+    height: 360px;
+    z-index: 2;
+    margin-bottom: 20px
+}
+
+.headslider .lastpic,
+.headslider .nextpic {
+    background: url(http://static1.mtime.cn/static/images/bg/000000_40.png);
+    width: 48px;
+    height: 102px;
+    position: absolute;
+    top: 50%;
+    margin-top: -51px;
+    z-index: 5;
+    opacity: .8;
+    filter: alpha(opacity=80)
+}
+
+.headslider .lastpic:hover,
+.headslider .nextpic:hover {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.headslider .lastpic {
+    left: 0
+}
+
+.headslider .nextpic {
+    right: 0
+}
+
+.headslider .lastpic i,
+.headslider .nextpic i {
+    background: url(../../images/index24.png) no-repeat;
+    width: 21px;
+    height: 47px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -24px 0 0 -11px;
+    opacity: .6
+}
+
+.headslider .nextpic i {
+    background-position: -21px 0
+}
+
+.headslider .lastpic:hover i,
+.headslider .nextpic:hover i {
+    opacity: 1
+}
+
+.headslider dl {
+    position: relative;
+    height: 100%;
+    z-index: 3
+}
+
+.headslider dd {
+    background: center no-repeat #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.headslider dd a.arealink {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: block
+}
+
+.headslider .mallitem {
+    width: 975px;
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    margin-left: -488px;
+    z-index: 3
+}
+
+.headslider .mallitem li {
+    float: left;
+    width: 195px
+}
+
+.headslider .mallitem a {
+    background: #000;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 190px;
+    height: 270px;
+    display: block
+}
+
+.livepart .imgbox:hover .video,
+.newsitem .imgbox:hover .picture,
+.newsitem .imgbox:hover .video {
+    filter: alpha(opacity=70);
+    opacity: .7
+}
+
+.headslider .sliderdot {
+    position: absolute;
+    right: 30px;
+    bottom: 12px;
+    z-index: 4
+}
+
+.headslider .sliderdot i {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: right;
+    margin: 0 5px;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.headslider .sliderdot i.cur {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.headslider.slider-auto .sliderdot,
+.headslider.slider-auto-fix .sliderdot,
+.headslider.slider-over .sliderdot {
+    right: 0;
+    bottom: -29px;
+    z-index: 4;
+    width: 100%;
+    text-align: center
+}
+
+.headslider.slider-auto .sliderdot i,
+.headslider.slider-auto-fix .sliderdot i,
+.headslider.slider-over .sliderdot i {
+    background: #cbcbcb;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #cbcbcb;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: right;
+    margin: 0 5px;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.slider-auto div,
+.slider-over div {
+    position: relative;
+    margin-bottom: 8px;
+    z-index: 3;
+    float: left
+}
+
+.headslider.slider-auto .sliderdot i.cur,
+.headslider.slider-auto-fix .sliderdot i.cur,
+.headslider.slider-over .sliderdot i.cur {
+    background: #267fd4;
+    border: 1px solid #267fd4;
+    width: 10px;
+    border-radius: 10px
+}
+
+.slider-over {
+    width: 1200px
+}
+
+.slider-over .over-h {
+    width: 392px;
+    height: 100%
+}
+
+.slider-over .over-h .slider-info p {
+    max-width: 310px;
+    line-height: 2
+}
+
+.slider-auto-fix .over-l .slider-info h4,
+.slider-over .over-l .slider-info h4 {
+    max-width: 640px
+}
+
+.slider-over .over-l {
+    width: 800px;
+    height: 100%;
+    margin-right: 8px
+}
+
+.slider-over .over-l .slider-info p {
+    max-width: 590px;
+    line-height: 2
+}
+
+.slider-over .over-m {
+    width: 392px;
+    height: 176px
+}
+
+.slider-over .over-m .slider-info p {
+    max-width: 310px;
+    line-height: 2
+}
+
+.slider-over .over-a {
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+
+.slider-auto {
+    width: 100%
+}
+
+.slider-auto .over-l {
+    width: 48%;
+    height: 100%
+}
+
+.slider-auto .over-l .slider-info h4 {
+    max-width: 750px
+}
+
+.slider-auto .over-l .slider-info p {
+    max-width: 660px;
+    line-height: 2
+}
+
+.slider-auto .over-m {
+    width: 26%;
+    height: 100%
+}
+
+.slider-auto .over-m .slider-info p {
+    max-width: 340px;
+    line-height: 2
+}
+
+div.slider-info {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 1.5;
+    background: url(../../images/newsbg.png) repeat-x;
+    margin-bottom: 0;
+    padding-bottom: 8px
+}
+
+div.slider-info a {
+    color: #fff
+}
+
+div.slider-info a i {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 12px;
+    margin: 0 20px
+}
+
+div.slider-info a h4,
+div.slider-info a p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding: 0 20px;
+    overflow: hidden
+}
+
+div.slider-info a i.info-ch {
+    background-color: #d83f3a
+}
+
+div.slider-info a i.info-dj {
+    background-color: #2374c0
+}
+
+div.slider-info a h4 {
+    font-size: 22px
+}
+
+div.slider-info a p {
+    font-size: 16px
+}
+
+.btn-video-play {
+    display: block;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    background: url(../../images/newspic.png) -38px 0 no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -43px;
+    margin-top: -43px
+}
+
+.btn-video-play:hover {
+    opacity: .7
+}
+
+.slider-auto-fix {
+    width: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.slider-auto-fix dl {
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    top: 0
+}
+
+.slider-auto-fix .over-l {
+    width: 640px;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    float: left;
+    margin-bottom: 8px
+}
+
+.slider-auto-fix .over-l .slider-info p {
+    max-width: 590px
+}
+
+.slider-auto-fix .over-l .goto-live {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #f06631;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 4
+}
+
+.slider-auto-fix .over-l .goto-live.live-center {
+    top: 50%;
+    margin-top: -12px;
+    left: 50%;
+    margin-left: -56px
+}
+
+.slider-auto-fix .over-l .goto-live.live-rb {
+    right: 10px;
+    bottom: 10px
+}
+
+.slider-auto-fix .over-l .btn-video-play {
+    display: block;
+    width: 86px;
+    height: 86px;
+    cursor: pointer;
+    background: url(../images/icon-video-play.png) center center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -43px;
+    margin-top: -43px
+}
+
+.slider-auto-fix .slider-info {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 1.5;
+    background: -ms-linear-gradient(top, transparent, #000);
+    margin-bottom: 0;
+    padding-bottom: 8px
+}
+
+.slider-auto-fix .slider-info i {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 12px;
+    margin: 0 20px
+}
+
+.slider-auto-fix .slider-info h4,
+.slider-auto-fix .slider-info p {
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    padding: 0 20px;
+    -webkit-box-orient: vertical;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.slider-auto-fix .slider-info i.info-ch {
+    background-color: #d83f3a
+}
+
+.slider-auto-fix .slider-info i.info-dj {
+    background-color: #2374c0
+}
+
+.slider-auto-fix .slider-info h4 {
+    font-size: 24px
+}
+
+.slider-auto-fix .slider-info p {
+    font-size: 16px
+}
+
+.newslist {
+    overflow: hidden
+}
+
+.newslist dl {
+    width: 1220px
+}
+
+.newslist dl.newspart {
+    float: left;
+    width: 915px
+}
+
+.newslist dd {
+    width: 285px;
+    margin-right: 20px;
+    float: left;
+    padding-bottom: 23px
+}
+
+.livepart {
+    float: left;
+    background: #f5f5f5
+}
+
+.livepart .livetop {
+    position: relative;
+    display: block;
+    width: 285px;
+    font-size: 16px
+}
+
+.livepart .livetop h3 {
+    padding: 10px 10px 0;
+    margin-bottom: 10px;
+    width: 264px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+.livepart .tag {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 11px;
+    position: absolute;
+    left: 4px;
+    top: 4px
+}
+
+.livepart .video {
+    background: url(../../images/index24.png) 0 -47px no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    font-size: 0;
+    line-height: 0
+}
+
+.livepart h2 {
+    font-size: 16px;
+    margin-left: 10px
+}
+
+dl.livelist {
+    margin: 14px 0 20px 15px;
+    width: 270px;
+    height: 198px
+}
+
+dl.livelist dd {
+    position: relative;
+    padding: 0 15px 6px 10px;
+    margin-right: 0;
+    width: auto;
+    height: 53px;
+    border-left: 1px solid #e6e6e6;
+    line-height: 100%
+}
+
+dl.livelist dd:last-child {
+    height: 21px
+}
+
+dl.livelist dd:last-child .tit {
+    color: #666
+}
+
+dl.livelist dd .icon {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #267fd4;
+    border-radius: 50%;
+    background-color: #f5f5f5
+}
+
+dl.livelist dd .tit {
+    float: left;
+    width: 177px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+dl.livelist dd .tit.yy {
+    cursor: default
+}
+
+dl.livelist dd p.txt {
+    line-height: 150%;
+    color: #888;
+    font-size: 12px
+}
+
+dl.livelist dd p.txt .red {
+    padding-left: 10px;
+    color: #eb321e
+}
+
+.hotlivebtnbox {
+    margin-top: -4px;
+    width: 244px
+}
+
+.hotlivebtn {
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 54px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #267fd4;
+    border-radius: 16px;
+    color: #267fd4
+}
+
+.hotlivebtn:hover {
+    background-color: #267fd4;
+    color: #fff
+}
+
+.hotlivebtn.yy {
+    border: 1px solid #75aa3d;
+    color: #75aa3d
+}
+
+.hotlivebtn.yy:hover {
+    background-color: #75aa3d;
+    color: #fff
+}
+
+.hotlivebtn.yyed {
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+    cursor: default
+}
+
+.hotlivebtn.yyed:hover {
+    background-color: #f5f5f5;
+    color: #a5a5a5
+}
+
+.pop-cont-icon {
+    height: 64px;
+    overflow: hidden;
+    padding: 20px 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center
+}
+
+.pop-cont-icon span {
+    display: inline-block;
+    line-height: 64px;
+    vertical-align: top
+}
+
+.pop-cont-icon i {
+    display: inline-block;
+    margin-right: 25px;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    background: url(../../images/index24.png) -1px -312px no-repeat
+}
+
+.pop-cont-icon i.err {
+    background: url(../../images/index24.png) -68px -312px no-repeat
+}
+
+.newsitem .imgbox {
+    position: relative;
+    display: block
+}
+
+.newsitem .imgbox .picture,
+.newsitem .imgbox .video {
+    background: url(../../images/index24.png) 0 -47px no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    font-size: 0;
+    line-height: 0
+}
+
+.newsitem .imgbox .picture {
+    background: url(../../images/newspic.png) 0 -160px no-repeat;
+    width: 32px;
+    height: 24px
+}
+
+.newsitem .imgbox .tag {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 11px;
+    position: absolute;
+    left: 4px;
+    top: 4px
+}
+
+.newsitem h3 {
+    font-size: 16px;
+    padding-top: 10px
+}
+
+.newsitem h3 a {
+    display: block
+}
+
+.newsitem .describe {
+    padding-top: 3px
+}
+
+.newsitem .describe a {
+    color: #888;
+    display: block
+}
+
+.customtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 15px
+}
+
+.customnav {
+    width: 1200px;
+    margin: 0 auto 19px;
+    position: relative;
+    text-align: center
+}
+
+.customnav i {
+    background: #e5e5e5;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: 2px
+}
+
+.customnav dd,
+.customnav dl {
+    background: #fff;
+    z-index: 2;
+    overflow: hidden
+}
+
+.customnav dd {
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 1.1;
+    border-left: 1px solid #e5e5e5;
+    margin-left: -1px
+}
+
+.i_quickticket {
+    width: 175px;
+    border-right: 1px solid #e6e6e6;
+    padding: 50px 20px 0 0;
+    position: relative;
+    z-index: 2;
+    float: left
+}
+
+.movieselect .name em,
+.moviestip li a .moviegrade {
+    float: right
+}
+
+.i_cityselect {
+    height: 46px;
+    width: 168px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    z-index: 11;
+    cursor: pointer
+}
+
+.i_cityselect .i_citybox {
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 2;
+    border-bottom: none
+}
+
+.i_cityselect .i_citybox.on {
+    background: #fff;
+    border-color: #e7e7e7
+}
+
+.i_cityselect .icon_position {
+    background: url(../../images/index24.png) -42px 0 no-repeat;
+    width: 16px;
+    height: 20px;
+    margin-right: 9px
+}
+
+.i_cityselect .icon_jtup {
+    background: url(../../images/index24.png) -58px 0 no-repeat;
+    width: 14px;
+    height: 8px;
+    margin-left: 12px
+}
+
+.i_cityselect .selcity_tip {
+    position: absolute;
+    left: 0;
+    top: 46px
+}
+
+.movieselect {
+    background: #fff;
+    width: 168px;
+    border: 1px solid #b9b9b9;
+    border-radius: 1px;
+    z-index: 9;
+    cursor: pointer;
+    margin-bottom: 18px
+}
+
+.movieselect .name {
+    width: 130px;
+    height: 34px;
+    zoom: 1;
+    line-height: 34px;
+    padding: 0 25px 0 12px;
+    font-size: 14px
+}
+
+.movieselect .name strong {
+    color: #F90;
+    font-weight: 400
+}
+
+.movieselect .name .clearinfo {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #1e7dd9
+}
+
+.movieselect .name .namebox {
+    width: 99px
+}
+
+.movieselect .sharp {
+    background: url(../../images/index24.png) -58px 0 no-repeat;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    top: 13px;
+    right: 10px
+}
+
+.moviestip {
+    background: #fff;
+    width: 255px;
+    position: absolute;
+    top: 35px;
+    left: -1px;
+    border: 1px solid #e7e7e7;
+    padding: 3px 1px
+}
+
+.moviestip li,
+.moviestip li a {
+    position: relative;
+    zoom: 1;
+    display: block
+}
+
+.moviestip ul {
+    height: 190px;
+    overflow: hidden;
+    overflow-y: auto
+}
+
+.moviestip li {
+    overflow: hidden
+}
+
+.moviestip li a {
+    clear: both;
+    overflow: hidden;
+    text-decoration: none;
+    padding: 5px 12px;
+    line-height: 1.6em
+}
+
+.moviestip li a:hover {
+    background: #e5f2fb
+}
+
+.cinematip .searcher,
+.moviestip .searcher {
+    background: #f8f8f8;
+    height: 30px;
+    width: 215px;
+    border: 1px solid #c8c8c8;
+    border-radius: 15px;
+    float: right;
+    padding: 0 15px;
+    margin-bottom: 10px
+}
+
+.moviestip .searcher {
+    width: 197px;
+    float: none;
+    margin: 12px 12px 0;
+    padding: 0 9px
+}
+
+.searcher .input {
+    background: 0 0;
+    width: 170px;
+    margin-top: 3px;
+    border: none;
+    float: left;
+    font-size: 13px
+}
+
+.searcher .sub {
+    background: url(../../images/index24.png) 0 -245px no-repeat;
+    display: block;
+    width: 17px;
+    height: 17px;
+    float: right;
+    margin-top: 8px;
+    cursor: pointer
+}
+
+.cinematip {
+    background: #fff;
+    width: 610px;
+    position: absolute;
+    left: -1px;
+    top: 35px;
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.8em
+}
+
+.cinematip .cinemanum {
+    font-size: 16px;
+    line-height: 2.5
+}
+
+.cinematip p {
+    border-bottom: 1px solid #bababa
+}
+
+.cinematip .arealist {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 210px;
+    position: relative;
+    zoom: 1
+}
+
+.cinematip p.oftenlist {
+    position: relative;
+    zoom: 1;
+    padding: 12px 0 12px 60px
+}
+
+.cinematip p.oftenlist span {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 70px
+}
+
+.cinematip .alist a {
+    width: 248px;
+    padding: 0 0 0 12px;
+    color: #333
+}
+
+.cinematip .alist a:hover {
+    background: #e5f2fb;
+    text-decoration: none;
+    color: #08c
+}
+
+.nottime {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    color: #9a9a9a;
+    cursor: default
+}
+
+.nottime .sharp {
+    opacity: .4;
+    filter: alpha(opacity=40)
+}
+
+.i_date {
+    background: #fff;
+    width: 600px;
+    position: absolute;
+    left: -1px;
+    top: 35px;
+    border: 1px solid #ebebeb;
+    font-size: 13px;
+    line-height: 1.8em
+}
+
+.i_datetab {
+    height: 64px;
+    border-bottom: 1px solid #d9d9d9;
+    position: relative;
+    padding: 0 26px
+}
+
+.i_datetab a.lastday,
+.i_datetab a.nextday {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 26px;
+    cursor: pointer
+}
+
+.i_datetab a.nextday {
+    left: auto;
+    right: 0
+}
+
+.i_datetab a.lastday i,
+.i_datetab a.nextday i {
+    background: url(../../images/index24.png) no-repeat;
+    width: 13px;
+    height: 27px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -14px 0 0 -7px
+}
+
+.i_datetab .i_dates,
+.i_datetab .i_dates dd,
+.i_datetab .i_dates dl,
+.selcity_tiptit,
+.showdate,
+.showdate ul {
+    position: relative
+}
+
+.i_datetab a.lastday i {
+    background-position: 0 -262px
+}
+
+.i_datetab a.nextday i {
+    background-position: -13px -262px
+}
+
+.i_datetab a.lastday:hover i {
+    background-position: -26px -262px
+}
+
+.i_datetab a.nextday:hover i {
+    background-position: -39px -262px
+}
+
+.i_datetab .i_dates {
+    width: 504px;
+    overflow: hidden;
+    color: #333
+}
+
+.i_datetab .i_dates dd {
+    float: left;
+    width: 168px;
+    font-size: 16px;
+    line-height: 64px;
+    text-align: center;
+    cursor: pointer
+}
+
+.i_datetab .i_dates dd.on {
+    color: #1e7dd7;
+    border-bottom: 2px solid #1e7dd7;
+    font-weight: 700
+}
+
+.showdate {
+    height: 347px;
+    overflow-y: auto;
+    zoom: 1
+}
+
+.i_selectbtn .btnblue,
+.showdate .btnblue,
+.showdate li {
+    height: 32px;
+    line-height: 32px
+}
+
+.showdate ul {
+    margin: 0 17px;
+    zoom: 1;
+    overflow: hidden
+}
+
+.showdate li {
+    border-top: 1px dotted #ccc;
+    padding: 13px 5px;
+    margin-top: -1px;
+    cursor: pointer;
+    font-size: 14px
+}
+
+.showdate .time {
+    float: left;
+    font-size: 20px;
+    width: 100px;
+    color: #333
+}
+
+.showdate .time i {
+    color: #666;
+    font-size: 12px
+}
+
+.showdate .ting {
+    float: left;
+    width: 190px;
+    color: #333
+}
+
+.showdate .mprice {
+    float: left;
+    width: 90px;
+    color: #F60;
+    font-size: 24px
+}
+
+.showdate .yprice {
+    float: left;
+    width: 50px;
+    color: #999;
+    text-decoration: line-through
+}
+
+.showdate .btnblue {
+    width: 100px;
+    float: right
+}
+
+.i_selectbtn {
+    padding-top: 13px;
+    text-align: center
+}
+
+.i_selectbtn .btnblue {
+    width: 148px;
+    font-size: 15px
+}
+
+.selcity_tip {
+    background: #fff;
+    width: 560px;
+    border: 1px solid #e7e7e7;
+    z-index: 0
+}
+
+.selcity_tiptit {
+    padding: 15px 15px 0;
+    height: 40px;
+    line-height: 35px;
+    border-bottom: 2px solid #e6e6e6
+}
+
+.selcity_tiptit .citysearch {
+    background: #f8f8f8;
+    width: 197px;
+    height: 30px;
+    float: right;
+    border: 1px solid #c4c4c4;
+    border-radius: 20px;
+    padding: 0 12px;
+    position: relative
+}
+
+.selcity_tiptit .citysearch input {
+    background: 0 0;
+    display: block;
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    padding: 0
+}
+
+.selcity_tiptit .citysearch .c_a5 {
+    color: #a5a5a5
+}
+
+.selcity_tiptit .cityletter {
+    float: left;
+    padding-left: 10px
+}
+
+.selcity_tiptit .cityletter a {
+    margin-right: 25px;
+    text-align: center;
+    line-height: 39px
+}
+
+.selcity_tiptit .cityletter a.on {
+    color: #1e7dd7;
+    font-weight: 700;
+    border-bottom: 3px solid #1e7dd7
+}
+
+.selcity_tiplist {
+    padding-bottom: 10px
+}
+
+.selcity_tiplist .citylist {
+    padding-top: 10px;
+    margin-left: 25px
+}
+
+.selcity_tiplist .citylist .capsletter {
+    width: 20px;
+    font-weight: 700;
+    float: left;
+    line-height: 1.8
+}
+
+.selcity_tiplist .citylist ul {
+    width: 505px;
+    float: left
+}
+
+.selcity_tiplist .citylist li {
+    float: left;
+    width: 58px;
+    margin-right: 5px;
+    line-height: 1.8
+}
+
+.sou_window {
+    background: #fff;
+    width: 210px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    right: 0;
+    top: 32px;
+    padding: 5px
+}
+
+.mainrecommend dl,
+.mallrecommend-box-b .mainrecommend dl {
+    border-top: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6
+}
+
+.sou_window .sou_note {
+    color: #333;
+    line-height: 20px;
+    padding: 5px
+}
+
+.sou_window .sou_city {
+    margin: 5px 0
+}
+
+.sou_window .sou_city li {
+    font-size: 13px;
+    line-height: 20px;
+    color: #333;
+    display: block;
+    padding: 3px 6px;
+    margin-top: 1px;
+    clear: both;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.sou_window .sou_city li.mouseover,
+.sou_window .sou_city li.on {
+    background-color: #eef7ff
+}
+
+.imgrolling {
+    position: relative
+}
+
+.imgrolling .last,
+.imgrolling .next {
+    background: url(http://static1.mtime.cn/static/images/bg/000000_40.png);
+    width: 32px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    margin-top: -34px;
+    z-index: 5;
+    opacity: .8;
+    filter: alpha(opacity=80)
+}
+
+.imgrolling .next {
+    left: auto
+}
+
+.imgrolling .last:hover,
+.imgrolling .next:hover {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.seltrailer .mainvideo:hover i,
+.seltrailer .videobox:hover i {
+    opacity: .7;
+    filter: alpha(opacity=70)
+}
+
+.imgrolling .last i,
+.imgrolling .next i {
+    background: url(../../images/index24.png) -155px 0 no-repeat;
+    width: 17px;
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -18px 0 0 -9px
+}
+
+.imgrolling .next i {
+    background-position: -138px 0
+}
+
+.imgrolling .imgrollinner {
+    position: relative;
+    overflow: hidden
+}
+
+.imgrolling .imgrollinner dl {
+    width: 5000px
+}
+
+.imgrolling .shadowleft,
+.imgrolling .shadowright {
+    background: url(../../images/index24.png) -186px -245px no-repeat;
+    width: 7px;
+    height: 317px;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    z-index: 4
+}
+
+.imgrolling .shadowright {
+    background-position: -193px -245px;
+    right: 0;
+    left: auto
+}
+
+.cinemamenu {
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    margin-bottom: 30px
+}
+
+.cinemamenu dd {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 0 40px;
+    border-bottom: 3px solid #fff
+}
+
+.cinemamenu dd i {
+    font-size: 26px;
+    font-weight: 400
+}
+
+.cinemamenu dd:hover {
+    color: #fc6921
+}
+
+.cinemamenu dd em {
+    background: #d2d2d2;
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    right: -42px;
+    top: 14px
+}
+
+.ciname-movie,
+.ciname-movie .mainmovie,
+.ticketregion {
+    position: relative
+}
+
+.cinemamenu dd.cur {
+    color: #fc6921;
+    border-bottom: 3px solid #fc6921
+}
+
+.mainrecommend dd,
+.mainrecommend dt,
+.mallrecommend-box-b .mainrecommend dt,
+.mallrecommend-box-b .partnerarea,
+.partnerarea {
+    border-bottom: 1px solid #e6e6e6
+}
+
+.ticketregion {
+    background: linear-gradient(#fff, #f5f5f5);
+    z-index: 4
+}
+
+.ticketregion .viewmore {
+    padding-top: 35px
+}
+
+.ciname-movie {
+    width: 980px;
+    float: right;
+    z-index: 1
+}
+
+.ciname-movie dt {
+    width: 360px;
+    float: left
+}
+
+.ciname-movie .mainmovie .cinameimgitem {
+    width: 170px;
+    float: left
+}
+
+.ciname-movie .mainmovie .mainmovieinfo {
+    width: 178px;
+    height: 256px;
+    margin-left: 12px;
+    float: left;
+    position: relative
+}
+
+.ciname-movie .mainmovie .mainmovieinfo h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding-bottom: 20px
+}
+
+.ciname-movie .mainmovie .mainmovieinfo p {
+    color: #777;
+    padding-bottom: 5px
+}
+
+.ciname-movie .mainmovie .mainmovieinfo p.combox {
+    height: 70px;
+    color: #6ba22a;
+    font-size: 15px;
+    line-height: 1.7;
+    padding-top: 5px
+}
+
+.ciname-movie .mainmovie .mainmovieinfo p.combox i {
+    background: url(../../images/index24.png) -116px 0 no-repeat;
+    width: 22px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: baseline
+}
+
+.ciname-movie .mainmovie .mainmovieinfo .ticketbox {
+    padding-top: 46px;
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.ciname-movie .mainmovie .mainmovieinfo .ticketbox b {
+    height: 47px;
+    padding-left: 25px;
+    color: #fc6921;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.cinameimgitem,
+.cinameimgout {
+    position: relative
+}
+
+.ciname-movie .mainmovie .mainmovieinfo .ticketbox strong {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1
+}
+
+.ciname-movie dd {
+    width: 125px;
+    float: left;
+    margin-left: 20px
+}
+
+.ciname-movie dd h3 {
+    padding-top: 11px;
+    font-weight: 400;
+    text-align: center
+}
+
+.ciname-movie dd .btnticket {
+    padding-top: 5px
+}
+
+.ciname-movie dd .btnticket .btnblue {
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px
+}
+
+.cinameimgitem {
+    display: block
+}
+
+.cinameimgitem .icohot,
+.cinameimgitem .iconew {
+    background: url(../../images/index24.png) -64px -103px no-repeat;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.cinameimgitem2,
+.cinameimgitem2 a {
+    width: 125px;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.cinameimgitem .icohot {
+    background-position: -113px -103px
+}
+
+.cinameimgitem .moviegrade {
+    position: absolute;
+    bottom: 0;
+    right: 0
+}
+
+.ciname-onnext .next,
+.imgrolling .next {
+    right: -35px
+}
+
+.cinameimgitem2 {
+    background: url(http://static1.mtime.cn/static/images/bg/000000_80.png);
+    font-size: 13px;
+    display: none
+}
+
+.ciname-onnext .showbox h3 a,
+.cinameimgout:hover .cinameimgitem2 {
+    display: block
+}
+
+.cinameimgitem2 a {
+    background: url(http://static1.mtime.cn/static/images/transparent.gif);
+    font-size: 0;
+    line-height: 0;
+    z-index: 5
+}
+
+.cinameimgitem2 .smalltypebox {
+    padding: 12px;
+    color: #979797
+}
+
+.cinameimgitem2 .smallcom {
+    position: relative;
+    padding: 0 10px 0 25px;
+    color: #fff;
+    font-size: 12px
+}
+
+.cinameimgitem2 .smallcom i {
+    background: url(../../images/index24.png) -114px -21px no-repeat;
+    width: 12px;
+    height: 9px;
+    position: absolute;
+    left: 6px;
+    top: 2px
+}
+
+.cinameimgitem2 .smallprice {
+    color: #fc6921;
+    text-align: center;
+    padding-top: 16px
+}
+
+.cinameimgitem2 .smallprice strong {
+    font-size: 24px;
+    font-weight: 400
+}
+
+.imgrolling .last {
+    left: -20px
+}
+
+.ciname-onnext .last {
+    left: -35px
+}
+
+.ciname-onnext dd {
+    float: left;
+    width: 305px;
+    margin-right: 15px
+}
+
+.ciname-onnext .showday {
+    font-size: 27px;
+    color: #afafaf;
+    line-height: 1;
+    font-weight: 100;
+    padding-bottom: 15px
+}
+
+.ciname-onnext .showbox {
+    min-height: 190px;
+    position: relative;
+    padding-left: 139px
+}
+
+.ciname-onnext .showbox .imgbox {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.ciname-onnext .showbox .imgbox .moviegrade {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.ciname-onnext .showbox h3 {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+    line-height: 1.2
+}
+
+.ciname-onnext .showtype {
+    color: #777;
+    margin-top: 9px
+}
+
+.ciname-onnext .showtype b {
+    color: #fc6921
+}
+
+.ciname-onnext .showtype a {
+    color: #777
+}
+
+.ciname-onnext .showtype p {
+    padding-bottom: 2px
+}
+
+.ciname-onnext .showtype .icovideo {
+    background: url(../../images/index24.png) -17px -245px no-repeat;
+    width: 16px;
+    height: 16px
+}
+
+.ciname-onnext .showticket {
+    height: 28px;
+    padding-top: 57px;
+    position: relative
+}
+
+.ciname-onnext .showticket b {
+    color: #fc6921;
+    position: absolute;
+    top: 25px;
+    left: 30px
+}
+
+.ciname-onnext .showticket b strong {
+    font-size: 28px;
+    font-weight: 400
+}
+
+.ciname-onnext .showticket .btngreen {
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px
+}
+
+.ciname-actlist .last {
+    left: -35px
+}
+
+.ciname-actlist .next {
+    right: -35px
+}
+
+.ciname-actlist dd {
+    float: left;
+    width: 590px;
+    overflow: hidden;
+    margin-right: 20px
+}
+
+@media screen and (max-width:1280px) {
+    .ciname-movie .imgrolling .next {
+        right: 0
+    }
+}
+
+.mallrecommend-box-b .mallrecommend {
+    padding-bottom: 10px;
+    margin: 0 -10px;
+    width: 1220px;
+    height: 522px
+}
+
+.mallrecommend-box-b .mallrecommend dl {
+    width: 1220px!important;
+    position: absolute;
+    top: 0;
+    left: -10px
+}
+
+.mallrecommend-box-b .mallrecommend dd,
+.mallrecommend-box-b .mallrecommend dt {
+    float: left;
+    position: relative
+}
+
+.mallrecommend-box-b .mallrecommend dt {
+    width: 180px
+}
+
+.mallrecommend-box-b .mallrecommend dd {
+    margin: 0 10px 20px;
+    height: 236px
+}
+
+.mallrecommend-box-b .mallrecommend .countdown {
+    position: absolute;
+    left: 20px;
+    bottom: 5px
+}
+
+.mallrecommend-box-b .traderbox .last {
+    left: -35px
+}
+
+.mallrecommend-box-b .mainrecommend {
+    padding-bottom: 30px
+}
+
+.mallrecommend-box-b .mainrecommend .mainitem {
+    float: left;
+    width: 477px
+}
+
+.mallrecommend-box-b .mainrecommend dl {
+    width: 722px;
+    float: left
+}
+
+.mallrecommend-box-b .mainrecommend dd,
+.mallrecommend-box-b .mainrecommend dt {
+    float: left
+}
+
+.mallrecommend-box-b .mainrecommend dd {
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6
+}
+
+.mallrecommend-box-b .partnerarea {
+    margin-bottom: 22px
+}
+
+.mallrecommend-box-b .partnerarea dd {
+    float: left;
+    width: 240px;
+    position: relative;
+    z-index: 1
+}
+
+.mallrecommend-box-b .partnerarea dd:hover {
+    box-shadow: 0 0 5px #666;
+    z-index: 3
+}
+
+.tradercommend {
+    margin: 0 -10px;
+    padding-bottom: 20px
+}
+
+.tradercommend li {
+    width: 130px;
+    background-color: #f5f5f5;
+    float: left;
+    margin: 0 10px 20px;
+    padding: 25px 0 25px 155px;
+    position: relative;
+    min-height: 90px
+}
+
+.tradercommend li .icon-a {
+    display: inline-block;
+    width: 155px;
+    height: 140px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.tradercommend li h3 {
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 6px
+}
+
+.tradercommend li p {
+    padding: 5px 0 10px
+}
+
+.tradercommend li p a {
+    width: 60px;
+    color: #888;
+    line-height: 1.3rem;
+    font-size: 13px
+}
+
+.tradercommend li.icon-toy {
+    background: url(../../images/icon-trader1.png) 25px center no-repeat #f5f5f5
+}
+
+.tradercommend li.icon-digit {
+    background: url(../../images/icon-trader2.png) 30px center no-repeat #f5f5f5
+}
+
+.tradercommend li.icon-dress {
+    background: url(../../images/icon-trader3.png) 15px center no-repeat #f5f5f5
+}
+
+.tradercommend li.icon-house {
+    background: url(../../images/icon-trader4.png) 5px center no-repeat #f5f5f5
+}
+
+.customnav a {
+    position: relative
+}
+
+.customnav em {
+    display: inline-block;
+    padding: 2px 3px;
+    background-color: #e53932;
+    color: #fff;
+    -webkit-text-size-adjust: none;
+    -webkit-transform: scale(.75);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform-origin: left bottom;
+    font-size: 8px;
+    position: absolute;
+    left: 100%;
+    border-radius: 7px;
+    bottom: 90%;
+    line-height: 1
+}
+
+.mallrecommend {
+    padding-bottom: 10px
+}
+
+.mallrecommend dd,
+.mallrecommend dt {
+    float: left;
+    position: relative
+}
+
+.mallrecommend dt {
+    width: 180px
+}
+
+.mallrecommend dd {
+    margin: 0 0 20px 20px
+}
+
+.mallrecommend .countdown {
+    position: absolute;
+    left: 20px;
+    bottom: 5px
+}
+
+.mainrecommend {
+    padding-bottom: 30px
+}
+
+.mainrecommend .mainitem {
+    float: left;
+    width: 477px
+}
+
+.mainrecommend dl {
+    width: 722px;
+    float: left
+}
+
+.mainrecommend dd,
+.mainrecommend dt {
+    float: left
+}
+
+.mainrecommend dd {
+    border-left: 1px solid #e6e6e6
+}
+
+.partnerarea {
+    margin-bottom: 22px
+}
+
+.partnerarea dd {
+    float: left;
+    width: 240px;
+    position: relative;
+    z-index: 1
+}
+
+.partnerarea dd:hover {
+    box-shadow: 0 0 5px #666;
+    z-index: 3
+}
+
+.categorynav {
+    padding: 20px 25px 0;
+    height: 378px;
+    border: 1px solid #e6e6e6
+}
+
+.categorynav i {
+    width: 26px;
+    height: 26px;
+    margin-right: 6px
+}
+
+.categorynav i img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block
+}
+
+.categorynav h3 {
+    font-size: 15px;
+    line-height: 26px
+}
+
+.categorynav p {
+    padding: 5px 0 20px
+}
+
+.categorynav p a {
+    width: 60px;
+    color: #888;
+    line-height: 1.3rem;
+    font-size: 13px
+}
+
+.countdown {
+    color: #d7d7d7
+}
+
+.countdown p {
+    padding-bottom: 10px;
+    font-size: 12px
+}
+
+.countdown i {
+    background: #000;
+    width: 16px;
+    text-align: center;
+    line-height: 26px;
+    margin: 0 1px;
+    color: #fff;
+    overflow: hidden
+}
+
+.itemblock .tag,
+.itemblock2 .tag i {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 8px
+}
+
+.countdown em {
+    margin: 0 3px;
+    line-height: 26px
+}
+
+.itemblock {
+    display: block;
+    position: relative
+}
+
+.itemblock .tag {
+    line-height: 22px;
+    position: absolute;
+    left: 4px;
+    top: 4px
+}
+
+.itemblock2 {
+    display: block;
+    position: relative
+}
+
+.itemblock2 .titarea {
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    right: 22px
+}
+
+.itemblock2 .tag {
+    margin-top: -9px
+}
+
+.itemblock2 .tag i {
+    line-height: 20px;
+    margin-bottom: 3px
+}
+
+.itemblock2 h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #333;
+    padding: 0 0 3px
+}
+
+.itemblock2 p {
+    color: #888
+}
+
+.itemblock2 .price {
+    margin-top: 8px;
+    color: #333
+}
+
+.itemblock2 .price strong {
+    font-size: 18px
+}
+
+.selectionregion {
+    background: #282828
+}
+
+.mselection {
+    padding: 35px 0 20px
+}
+
+.seltrailer {
+    width: 860px;
+    float: left;
+    color: #fff
+}
+
+.seltrailer .gt {
+    background-position: -126px -31px
+}
+
+.seltrailer h4 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1
+}
+
+.seltrailer a {
+    color: #fff
+}
+
+.seltrailer dl {
+    margin-top: 25px
+}
+
+.seltrailer dt {
+    width: 618px;
+    float: left
+}
+
+.seltrailer dt h3,
+.seltrailer dt p {
+    padding-left: 20px;
+    margin-top: 12px
+}
+
+.seltrailer dt h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2
+}
+
+.seltrailer dt p {
+    font-size: 16px;
+    color: #d2d2d2;
+    margin-top: 7px
+}
+
+.seltrailer dd {
+    width: 230px;
+    float: right;
+    margin-bottom: 10px
+}
+
+.seltrailer .mainvideo {
+    display: block;
+    position: relative
+}
+
+.seltrailer .mainvideo i {
+    background: url(../../images/index24.png) -80px -47px no-repeat;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px
+}
+
+.seltrailer .videobox {
+    display: block;
+    position: relative;
+    overflow: hidden
+}
+
+.seltrailer .videobox span {
+    background: url(../../images/index24.png) 0 -153px repeat-x;
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: 45px;
+    padding-left: 50px
+}
+
+.seltrailer .videobox span i {
+    background: url(../../images/index24.png) 0 -103px repeat-x;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 7px;
+    bottom: 11px
+}
+
+.mlistpic,
+.mlistpic dd,
+.selguide .mainguide {
+    position: relative
+}
+
+.seltrailer .videobox span strong {
+    max-width: 170px;
+    font-weight: 400;
+    display: block;
+    line-height: 1.2
+}
+
+.seltrailer .videobox span b {
+    font-size: 12px;
+    color: #c8c8c8;
+    display: block
+}
+
+.selguide {
+    width: 320px;
+    float: right
+}
+
+.mlist,
+.mlist li,
+.mlistpic dd,
+.mlistpic dt {
+    float: left
+}
+
+.selguide h4 {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px
+}
+
+.selguide .mainguide {
+    background: #fff
+}
+
+.selguide .mainguide dd,
+.selguide .mainguide dt {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    padding: 0 18px
+}
+
+.selguide .mainguide span {
+    float: left;
+    line-height: 45px
+}
+
+.selguide .mainguide span.moviename {
+    width: 110px
+}
+
+.selguide .mainguide span.moviename a {
+    display: block
+}
+
+.selguide .mainguide span.movierank {
+    width: 92px;
+    text-align: center;
+    color: #61ac36
+}
+
+.selguide .mainguide span.movierank i {
+    background: url(../../images/index24.png) no-repeat;
+    width: 7px;
+    height: 13px;
+    margin-left: 10px
+}
+
+.selguide .mainguide span.movierank i.fair {
+    background-position: -72px -13px
+}
+
+.selguide .mainguide span.movierank i.down {
+    background-position: -79px 0
+}
+
+.selguide .mainguide span.movierank i.up {
+    background-position: -72px 0
+}
+
+.selguide .mainguide span.moviectrl {
+    width: 80px;
+    text-align: right
+}
+
+.selguide .mainguide span.moviectrl .btnctrl {
+    width: 70px;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #888;
+    color: #888;
+    border-radius: 15px
+}
+
+.selguide .mainguide span.moviectrl .btnctrl.on {
+    background: #61ac36;
+    border-color: #61ac36;
+    color: #fff
+}
+
+.selguide .mainguide span.moviectrl .btnctrl.false,
+.selguide .mainguide span.moviectrl .btnctrl.false:hover {
+    background: 0 0;
+    color: #888;
+    border: none;
+    line-height: 24px
+}
+
+.selguide .mainguide span.moviectrl .btnctrl.false:hover {
+    color: #333
+}
+
+.selguide .mainguide dt span {
+    width: 122px;
+    font-weight: 700
+}
+
+.selguide .mainguide dt .fr {
+    line-height: 40px;
+    font-size: 13px
+}
+
+.selguide .mainguide dd.odd {
+    background: #f5f5f5
+}
+
+.mlist {
+    width: 860px
+}
+
+.mlist h4 {
+    font-size: 22px;
+    font-weight: 400
+}
+
+.mlist ul {
+    margin-top: 25px;
+    width: 878px
+}
+
+.mlist li {
+    width: 439px;
+    height: 255px;
+    overflow: hidden
+}
+
+.mlist h3 {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: 6px
+}
+
+.mlistpic dt {
+    width: 280px
+}
+
+.mlistpic dd {
+    width: 138px;
+    margin: 0 0 2px 2px
+}
+
+.mlistpic dd span,
+.mlistpic dd strong {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.mlistpic dd span {
+    background: url(http://static1.mtime.cn/static/images/bg/000000_70.png);
+    width: 138px;
+    height: 99px;
+    z-index: 2
+}
+
+.mlistpic dd:hover span {
+    background: url(http://static1.mtime.cn/static/images/bg/000000_50.png)
+}
+
+.mlistpic dd strong {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 99px;
+    font-weight: 400;
+    z-index: 3
+}
+
+.mlistpic dd strong i {
+    font-size: 30px;
+    color: #e6e6e6
+}
+
+.mboxoffice {
+    width: 303px;
+    float: right
+}
+
+.mboxoffice h4 {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 23px
+}
+
+.mboxoffice li {
+    margin-top: 20px;
+    padding-bottom: 2px
+}
+
+.mboxoffice p.tr,
+.mboxofficerank .moviegrade {
+    margin-top: 5px
+}
+
+.mboxofficetab {
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px
+}
+
+.mboxofficetab dd {
+    float: left;
+    width: 33%;
+    text-align: center;
+    cursor: pointer
+}
+
+.mboxofficetab dd span {
+    padding-bottom: 12px;
+    margin-bottom: -2px
+}
+
+.mboxofficetab dd.cur {
+    color: #1e7dd7;
+    font-weight: 700
+}
+
+.mboxofficetab dd.cur span {
+    border-bottom: 3px solid #1e7dd7;
+    padding-bottom: 12px
+}
+
+.mboxofficerank dd,
+.mboxofficerank dt {
+    float: left
+}
+
+.mboxofficerank dt {
+    font-size: 28px;
+    color: #d2d2d2;
+    font-weight: 400
+}
+
+.mboxofficerank dd {
+    margin-left: 9px
+}
+
+.mboxofficerank dd.text {
+    width: 170px
+}
+
+.mboxofficerank dd.moviepic {
+    width: 80px;
+    height: 120px;
+    position: relative
+}
+
+.mboxofficerank dd.moviepic .moviegrade {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.mboxofficerank h3 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 0 8px
+}
+
+.mboxofficerank h3 a {
+    display: block
+}
+
+.mboxofficerank p {
+    color: #888
+}
+
+.hotcomments {
+    float: left;
+    width: 860px
+}
+
+.hotcomments .commbox {
+    margin-top: 25px
+}
+
+.hotcomments .maincom {
+    width: 450px;
+    height: auto;
+    float: left
+}
+
+.hotcomments .maincom .hotcomimg {
+    display: block
+}
+
+.hotcomments .maincom dd,
+.hotcomments .maincom dl {
+    height: 480px
+}
+
+.hotcomments .maincom .lastpic,
+.hotcomments .maincom .nextpic {
+    width: 32px;
+    height: 68px;
+    top: 99px;
+    margin-top: 0
+}
+
+.hotcomments .maincom .lastpic i,
+.hotcomments .maincom .nextpic i {
+    width: 14px;
+    margin-left: -7px
+}
+
+.hotcomments .maincom .nextpic i {
+    background-position: -28px 0
+}
+
+.hotcomments .maincom .sliderdot {
+    bottom: auto;
+    top: 230px;
+    right: 10px
+}
+
+.hotcomments .commentsbox {
+    height: 253px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    padding: 0 25px
+}
+
+.hotcomments .commentsbox .commentsuser {
+    position: relative;
+    padding: 50px 10px 0 85px;
+    margin: -35px 0 0 -10px;
+    color: #888
+}
+
+.hotcomments .commentsbox .commentsuser a {
+    color: #888
+}
+
+.hotcomments .commentsbox .commentsuser p a {
+    max-width: 85px;
+    margin: 0 12px
+}
+
+.hotcomments .commentsbox .commentsuser img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 3px solid #fff;
+    border-radius: 50%
+}
+
+.hotcomments .commentsbox .commentsuser .peoplelike,
+.hotcomments .commentsbox .commentsuser .peoplenormal,
+.hotcomments .commentsbox .commentsuser .peoplesad {
+    margin-right: 12px;
+    top: -2px
+}
+
+.hotcomments .commentsbox h3 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px 0 20px
+}
+
+.hotcomments .commentsbox .describe {
+    font-size: 16px;
+    line-height: 1.7
+}
+
+.hotcomments .commentsbox .describe i {
+    background: url(../../images/index24.png) -86px 0 no-repeat;
+    width: 30px;
+    height: 21px;
+    margin-right: 10px;
+    top: -5px;
+    vertical-align: baseline
+}
+
+.hotcomments .sidercom {
+    width: 375px;
+    float: right
+}
+
+.hotcomments .commentsmod {
+    min-height: 120px;
+    position: relative;
+    padding-right: 100px;
+    margin: 5px 0 46px
+}
+
+.hotcomments .commentsmod img {
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+.actlist,
+.actlist dl {
+    position: relative
+}
+
+.hotcomments .commentsmod .describe {
+    font-size: 16px;
+    line-height: 1.5
+}
+
+.hotcomments .commentsmod .describe i {
+    background: url(../../images/index24.png) -116px 0 no-repeat;
+    width: 22px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: baseline
+}
+
+.hotcomments .commentsmod .describemovie {
+    color: #888;
+    margin-top: 10px
+}
+
+.hotcomments .commentsmod .describemovie a {
+    max-width: 85px;
+    color: #888
+}
+
+.hotcomments .commentsmod .describemovie .moviegrade {
+    margin-left: 3px
+}
+
+.actlist {
+    margin-top: 25px
+}
+
+.actlist dd {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.actlist .actpic {
+    display: block;
+    position: relative
+}
+
+.actlist .actpic i {
+    background: #eb321e;
+    color: #fff;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0 8px;
+    position: absolute;
+    left: 4px;
+    top: 4px
+}
+
+.actcont {
+    width: 303px;
+    height: 269px;
+    border: 1px solid #e6e6e6;
+    border-top: none;
+    padding: 0 20px;
+    font-size: 13px
+}
+
+.actcont p {
+    line-height: 1.6;
+    margin-bottom: 4px
+}
+
+.actcont h3 {
+    padding: 33px 5px 15px;
+    font-size: 16px
+}
+
+.actcont .actadd i,
+.actcont .acttime i {
+    background: url(../../images/index24.png) -86px -21px no-repeat;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px
+}
+
+.actcont .actadd i {
+    background-position: -100px -21px;
+    height: 16px
+}
+
+.actcont .actinfo {
+    color: #888;
+    padding: 8px 0 0;
+    margin-bottom: 12px
+}
+
+.actcont .actbtn {
+    text-align: center;
+    padding-top: 5px
+}
+
+.actcont .actbtn a {
+    background: #1c7ed5;
+    width: 160px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px
+}
+
+.actcont .actbtn a:hover {
+    background: #1870c9
+}
+
+.actdot {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    top: 215px
+}
+
+.actdot i {
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 7px;
+    opacity: .3;
+    cursor: pointer;
+    filter: alpha(opacity=30)
+}
+
+.actdot i.cur {
+    background: #1e7dd7;
+    border: 1px solid #1e7dd7;
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.funnews {
+    padding: 30px 0
+}
+
+.funnews h4 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 22px
+}
+
+.funnews .newslist dd {
+    padding-bottom: 33px
+}
+
+.hotnews {
+    padding: 45px 0 25px
+}
+
+.cinemaregion {
+    padding: 10px 0 50px
+}
+
+.mallregion {
+    padding: 39px 0
+}
+
+.mselectionregion {
+    padding-top: 47px
+}
+
+.movielist {
+    padding: 63px 0 30px
+}
+
+h4.indextitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1
+}
+
+.indexstruct .structleft {
+    width: 860px;
+    float: left
+}
+
+.indexstruct .structright {
+    width: 303px;
+    float: right
+}
+
+.titmore {
+    float: right;
+    position: relative;
+    padding-top: 4px
+}

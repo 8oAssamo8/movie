@@ -1,0 +1,43 @@
+<!-- 作者：谢森宇 徐聘 付乐祺 -->
+<!-- 班级：2016级软件工程卓越计划2班 -->
+<!-- 学院：计算机与网络安全学院 -->
+<!-- 学校：东莞理工学院 -->
+<?php
+
+function page($total_records, $page_size, $page_current, $url, $searchTitle)
+{
+    $total_pages = ceil($total_records / $page_size);
+    $page_previous = ($page_current <= 1) ? 1 : $page_current - 1;
+    $page_next = ($page_current >= $total_pages) ? $total_pages : $page_current + 1;
+    $page_next = ($page_next == 0) ? 1 : $page_next;
+    $page_start = ($page_current - 5 > 0) ? $page_current - 5 : 0;
+    $page_end = ($page_start + 10 < $total_pages) ? $page_start + 10 : $total_pages;
+    $page_start = $page_end - 10;
+    if ($page_start < 0)
+        $page_start = 0;
+    $navigator = "";
+    if (empty($searchTitle)) {
+        if ($page_current > 1)
+            $navigator = "<a href='$url?page_current=$page_previous'>上一页</a>  ";
+        for ($i = $page_start; $i < $page_end; $i ++) {
+            $j = $i + 1;
+            $navigator .= "<a href='$url?page_current=$j'>$j</a>  ";
+        }
+        if ($page_current < $page_end)
+            $navigator .= "<a href='$url?page_current=$page_next'>下一页</a>";
+        $navigator .= "<br/>共" . $total_records . "条记录，共" . $total_pages . "页，当前是第" . $page_current . "页";
+    } else {
+        // $searchTitle = $_GET["searchTitle"];
+        if ($page_current > 1)
+            $navigator = "<a href='$url?searchTitle=$searchTitle&page_current=$page_previous'>上一页</a>  ";
+        for ($i = $page_start; $i < $page_end; $i ++) {
+            $j = $i + 1;
+            $navigator .= "<a href='$url?searchTitle=$searchTitle&page_current=$j'>$j</a>  ";
+        }
+        if ($page_current < $page_end)
+            $navigator .= "<a href='$url?searchTitle=$searchTitle&page_current=$page_next'>下一页</a>";
+        $navigator .= "<br/>共" . $total_records . "条记录，共" . $total_pages . "页，当前是第" . $page_current . "页";
+    }
+    echo $navigator;
+}
+?> 

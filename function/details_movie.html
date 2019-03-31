@@ -1,0 +1,117 @@
+<!-- 作者：谢森宇 徐聘 付乐祺 -->
+<!-- 班级：2016级软件工程卓越计划2班 -->
+<!-- 学院：计算机与网络安全学院 -->
+<!-- 学校：东莞理工学院 -->
+<!-- 阶梯式返回 -->
+<div class="container" style="margin-top: 20px;">
+	<a href="#" onclick="javascript:window.history.go(-1);">返回上一级</a> <i
+		class="icon-minus"> >> </i> <a href="#" onclick="return false">{{detial.name}}</a>
+</div>
+<div class="container" style="margin-top: 56px; font-family: '微软雅黑'">
+	<div class="row">
+		<div class="col-md-1 col-sm-12 col-xs-12" style="margin-right: 40px;">
+			<img src="{{detial.images}}" class="img-responsive center-block"
+				style="min-width: 117px;" alt=""> <br>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<a href="#" class="btn btn-primary"
+					ng-hide="detial.isCollected==true" ng-click="collect()"
+					style="margin-left: -7px;">♡ 收藏影片</a>
+			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<a href="#" class="btn btn-success"
+					ng-hide="detial.isCollected==false" ng-click="unCollect()">♥
+					已收藏</a>
+			</div>
+		</div>
+		<div class="col-xs-12 hidden-md hidden-lg" style="height: 8px;"></div>
+		<div class="col-xs-2 col-sm-2"></div>
+		<div class="col-md-10 col-sm-8 col-xs-8">
+			<h3 style="margin-top: 8px;">
+				{{detial.name}}<span style="color: rgba(21, 21, 21, 0.60);">（{{detial.date}}）</span>
+			</h3>
+			<h4 style="margin-top: 8px; font-size: 16px;">
+				类型：<span class="font-color">{{detial.type}}</span>
+			</h4>
+			<h4 style="margin-top: 8px; font-size: 16px;">
+				评分：<span class="font-color">{{detial.score}}</span>
+			</h4>
+			<h4 style="margin-top: -1px; font-size: 16px;">主演：{{detial.performer}}</h4>
+			<p style="margin-top: -3px; text-indent: 2em;">{{detial.brief}}</p>
+		</div>
+	</div>
+</div>
+<div class="container" style="margin-top: 35px; line-height: 36px;">
+	分享到：
+	<div style="display: inline;">
+		<a
+			href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=我在电影分享站发现了一部好电影哟！这部电影的名字叫做“{{detial.name}}”，快来跟我一起看大片吧！&url=https://www.baidu.com/"
+			target="_blank"><img src="./public/images/qqzoneshare.png"
+			width="30"></a>
+	</div>
+	<div style="display: inline;">
+		<a
+			href="https://connect.qq.com/widget/shareqq/iframe_index.html?url=http://localhost/movie/&title=我在电影分享站发现了一部好电影哟！这部电影的名字叫做“{{detial.name}}”，快来跟我一起看大片吧！"
+			target="_blank"><img src="./public/images/qqshare.png" width="32"></a>
+	</div>
+	<div style="display: inline;">
+		<a
+			href="http://v.t.sina.com.cn/share/share.php?title=我在电影分享站发现了一部好电影哟！这部电影的名字叫做“{{detial.name}}”，快来跟我一起看大片吧！&url=http://localhost/movie/"
+			target="_blank"><img src="./public/images/sinaweiboshare.png"
+			width="36"></a>
+	</div>
+	<div style="display: inline;">
+		<a
+			href="http://shuo.douban.com/!service/share?href=http://localhost/movie/&name=我在电影分享站发现了一部好电影哟！这部电影的名字叫做“{{detial.name}}”，快来跟我一起看大片吧！"
+			target="_blank"><img src="./public/images/doubanshare.png"
+			width="32"></a>
+	</div>
+	<div style="display: inline;">
+		<a
+			href="http://widget.renren.com/dialog/share?resourceUrl=http://localhost/movie/&title=电影分享站——{{detial.name}}&description=我在电影分享站发现了一部好电影哟！这部电影的名字叫做“{{detial.name}}”，快来跟我一起看大片吧！"
+			target="_blank"><img src="./public/images/renren.png" width="34"></a>
+	</div>
+</div>
+
+<div class="container">
+	<h4
+		style="border-left: 2px solid #258DCD; padding-left: 8px; margin-top: 40px;">
+		热门影评</h4>
+</div>
+<div class="container">
+	<div class="row text-center" ng-show="detial.comment.length==0">
+		<h4>暂无评论，快来评论吧~</h4>
+	</div>
+	<ul class="list-group">
+		<li class="list-group-item border"
+			ng-repeat="v in detial.comment| orderBy : 'date':true ">
+			<h4>
+				<img ng-src="{{v.headurl}}" alt=""
+					style="width: 22px; height: 22px; border-radius: 50%; vertical-align: middle">
+				<span
+					style="font-size: 16px; font-family: '微软雅黑'; vertical-align: middle; font-weight: bold; letter-spacing: 1.33px; color: #333333;">{{v.userName}}</span>
+			</h4>
+			<p>{{v.content}}</p>
+			<p class="text-right">{{v.date + '000' | date:'M月d日'}}</p>
+			<p ng-if="detial.showDelete" class="text-right">
+				<a ng-href="{{v.deleteurl}}">删除评论</a>
+			</p>
+		</li>
+	</ul>
+</div>
+<div class="container" style="margin-bottom: 80px;">
+	<div class="row">
+		<div class="col-md-12">
+			<form>
+				<textarea id="textarea" rows="8" ng-model="data.content"
+					placeholder="请在此输入评论！"></textarea>
+				<div class="col-md-12 text-right" style="margin-top: 8px;">
+					<div class="col-md-11"></div>
+					<div class="col-md-1">
+						<button type="button" class="btn btn-primary btn-block"
+							ng-click="sub()">评论</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
